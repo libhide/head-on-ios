@@ -53,4 +53,13 @@ struct TeamWheel {
         ["name": "Chelsea", "crest": "chelsea.png"],
         ["name": "Arsenal", "crest": "arsenal.png"]
     ]
+    
+    func getRandomTeam() -> Team {
+        let unsignedArrayCount = (UInt32(teams.count))
+        let unsignedRandomNumber = arc4random_uniform(unsignedArrayCount)
+        let randomNumber = Int(unsignedRandomNumber)
+        
+        let team = Team(name: teams[randomNumber]["name"]!, crest: teams[randomNumber]["crest"]!)
+        return team
+    }
 }

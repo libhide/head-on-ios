@@ -58,6 +58,7 @@
 		F956EC841D2FAF0200F0D7BF /* Head On */ = {
 			isa = PBXGroup;
 			children = (
+				F956EC9D1D2FB99200F0D7BF /* Team.swift */,
 				F956EC851D2FAF0200F0D7BF /* AppDelegate.swift */,
 				F956EC871D2FAF0200F0D7BF /* ViewController.swift */,
 				F956EC991D2FB44900F0D7BF /* TeamWheel.swift */,
@@ -65,7 +66,6 @@
 				F956EC8C1D2FAF0200F0D7BF /* Assets.xcassets */,
 				F956EC8E1D2FAF0200F0D7BF /* LaunchScreen.storyboard */,
 				F956EC911D2FAF0200F0D7BF /* Info.plist */,
-				F956EC9D1D2FB99200F0D7BF /* Team.swift */,
 			);
 			path = "Head On";
 			sourceTree = "<group>";

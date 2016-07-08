@@ -9,15 +9,29 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var crestImageView: UIImageView!
+    @IBOutlet weak var teamLabel: UILabel!
+    @IBOutlet weak var getRandomTeamButton: UIButton!
+    
+    let teamWheel = TeamWheel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        // Nothing here lol
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    }
+
+    
+    @IBAction func getRandomTeam(sender: AnyObject) {
+        // Update button text
+        getRandomTeamButton.setTitle("Get Another Team", forState: .Normal)
+        let team = teamWheel.getRandomTeam()
+        teamLabel.text = team.name
+        crestImageView.image = UIImage(named: team.crest)
     }
 }
 
